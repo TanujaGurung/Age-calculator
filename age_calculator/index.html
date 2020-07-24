@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <h1> Calculate Your age in the particular year by entering the following details</h1>
+    <p> </p>
+    Year Of Birth : <input type="number" id="dob" value="0">
+ <p></p>
+    In the year   : <input type="number" id="year" value="0">
+    <p></p>
+    <button type ="button" onclick="myfunction()" >Calculate</button>
+    <p id="demo"></p>
+    <script>
+        function myfunction()
+        {
+            var x = document.getElementById("dob").value;
+            var y = document.getElementById("year").value;
+            var z = y-x;
+            var a = z-1;
+           //console.log("your age will be :" + z);
+           document.getElementById("demo").innerHTML = "your age in the year " + y + " will be either " + z + " or " + a + " depending on the month in which you were born";
+        }
+    </script>
+    
+</body>
+</html>
